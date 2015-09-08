@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>Weather</title>
 </head>
 
-<!-- linking to app.js (the module) -->
+<!-- linking the whole body to app.js (the module) -->
 <body ng-app="myApp">
 
 <!-- linking to MainController.js (a controller) -->
@@ -16,18 +16,19 @@
 
   </div>
 
-  <!-- links the div to the WController named WeatherController  -->
+  <!-- links the div to the WController named WeatherController where the AJAX request is sent and stored  -->
   <div class="weather" ng-controller="WeatherController">
 
+      <!-- this pulls the JSON data from the Wcontroller (named WeatherController) -->
       <h2>{{ stuff }}</h2>
 
   </div>
 
 
-<!-- Angular -->
+<!-- Angular CDN -->
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
 
-<!-- Modules -->
+<!-- Module -->
 <script src="js/app.js"></script>
 
 <!-- Controllers -->
