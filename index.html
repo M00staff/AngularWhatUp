@@ -4,10 +4,25 @@
   <meta charset="UTF-8">
   <title>Document</title>
 </head>
-<body>
+
+<!-- linking the main module -->
+<body ng-app="myApp">
+
+  <div class="main" ng-controller="MainController">
+
+    <h1>{{ title }}</h1>
+
+  </div>
 
 
+<!-- Angular -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
 
-<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.min.js"></script>
+<!-- Modules -->
+<script src="js/app.js"></script>
+
+<!-- Controllers -->
+<script src="js/MainController.js"></script>
+
 </body>
 </html>
